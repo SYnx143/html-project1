@@ -1,0 +1,50 @@
+.container {
+    display: flex; /* Arrange logo and menu horizontally */
+    justify-content: space-between; /* Space between them */
+  }
+  
+  .logo {
+    display: flex; 
+    align-items: center;
+    background-color: #6A9AB0;
+    width: 250px;
+  }
+  h1{
+    color: white;
+  }
+  .logo img {
+    margin-right: 10px; 
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none; 
+   padding: 30px 10px;
+  }
+  
+  .menu li {
+    background-color: #EAD8B1;
+    padding: 5px 20px;
+    margin: 0 5px;
+  }
+  
+  .image-container {
+    text-align: center; 
+  }
+  
+  .pwebsite {
+    text-align: center; 
+    background-color: #6A9AB0;
+
+  }
+
+  
+  .features a {
+    display: block; 
+    text-align: center; 
+    padding: 10px 20px;
+    background-color: #6A9AB0;
+    color: white; 
+
+  }
+  
