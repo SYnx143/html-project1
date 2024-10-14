@@ -1,19 +1,37 @@
-.container {
-    display: flex; /* Arrange logo and menu horizontally */
-    justify-content: space-between; /* Space between them */
-  }
+body{
   
+  
+  background-color: #CFCFCF;
+}
+.bdy{
+  border: 5px solid black;
+}
+.bdy:hover{
+  content: url(Want\ to\ make\ your\ life\ more\ easier.png);
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+  }
+    
   .logo {
     display: flex; 
     align-items: center;
     background-color: #6A9AB0;
-    width: 250px;
+    width: 300;
+    border: 5px solid black;
   }
-  h1{
+  h1,p,h2{
     color: white;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   }
   .logo img {
     margin-right: 10px; 
+    
   }
   
   .menu {
@@ -23,9 +41,11 @@
   }
   
   .menu li {
-    background-color: #EAD8B1;
+    background-color: #6A9AB0;
     padding: 5px 20px;
     margin: 0 5px;
+    color: white;
+    border: 5px solid black;
   }
   
   .image-container {
@@ -35,7 +55,9 @@
   .pwebsite {
     text-align: center; 
     background-color: #6A9AB0;
-
+     width: 75%;
+     margin-left: 11%;
+     border: 3px solid black;
   }
 
   
@@ -45,6 +67,8 @@
     padding: 10px 20px;
     background-color: #6A9AB0;
     color: white; 
-
+    width: 25%;
+    margin-left: 36%;
+    border: 5px solid black;
   }
   
