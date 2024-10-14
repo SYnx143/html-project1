@@ -1,23 +1,35 @@
 /* Container 1 */
+h2{
+  text-transform: uppercase;
+}
+h1,p,h2,a{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+body{
+  background-color: #CFCFCF;
+}
 .logo {
     background-color: #6A9AB0;
     color: white;
     padding: 10px 20px;
-    border-radius: 5px;
     width: 175px;
+    border: 5px solid black;
   }
   .menu {
     display: flex;
     list-style: none; 
     padding: 0;
-    color: white;
-    
+    color: white;    
   }
   .menu li {
     background-color:  #6A9AB0;
     padding: 10px 20px;
-    margin: 0 5px; /* Add spacing between items */
-    border-radius: 5px;
+    margin: 0 5px; 
+    border: 5px solid black;
   }
   
   /* Cal/Notes/Quiz */
@@ -30,9 +42,10 @@
   .calculator-box, .notes-box, .quiz-box{
     width: 30%;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
+    border: 5px solid black;
+    background-color: #6A9AB0;
   }
   
   .section h2 {
@@ -52,12 +65,14 @@
   }
   .more1 {
     text-align: center; 
-    background-color: #EAD8B1;;
+    background-color: #6A9AB0;
     color: white;
     padding: 10px 20px; 
     display: block;
     width: 50%;
     margin-left: 23%;
+    border: 5px solid black;
+
 }
 
   /* Container 2 */
@@ -74,7 +89,11 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
+    border: 5px solid black;
+    background-color: #6A9AB0;
+    
+  
   }
   
   .section h2 {
@@ -105,4 +124,6 @@
     padding: 10px 20px;
     border: none;
     font-size: 25px;
+    border: 5px solid black;
+
   }
