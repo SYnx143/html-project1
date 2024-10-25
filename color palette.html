@@ -3,104 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Pallete</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Palette Converter</title>
     <link rel="icon" type="images/png" href="Untitled_design_1.webp">
 
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
             display: flex;
-            height: 100%; 
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
-        .chat-box {
-            width: 400px;
-            max-width: 100%;
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 15%;
+            height: auto; /* Adjusted to auto to accommodate additional content */
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 80%;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background: white;
-            display: block; 
-            margin-left: 40%; 
-            margin-top: 10%;
         }
-        .chat-header {
-            background: #4a90e2;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .chat-messages {
-            padding: 10px;
-            height: 300px;
-            border-bottom: 1px solid #ccc; 
-        }
-        .message {
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 3px;
-            max-width: 75%;
-        }
-        .user-message {
-            background: #4a90e2;
-            color: white;
-        }
-        .bot-message {
-            background: #eaeaea;
-            color: #333;
-        }
-        .chat-input {
-            padding: 10px;
-            border-top: 1px solid #ccc;
-        }
-        .chat-input input {
-            width: 250px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            margin-right: 5px;
-        }
-        .chat-input button {
-            padding: 10px;
-            background: #4a90e2;
-            color: white;
-            border: none;
-            border-radius: 3px;      
-            width: 70px;
-        }
-        a {
-    display: inline-block; 
-    height: 65px;
-    width: 100px;
-    background-color: #007bff; 
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 15px; 
-    margin-left: 35%;
-}
 
-a:hover {
-    background-color: #0056b3;
-}
+        .palette {
+            display: inline-block;
+        }
+
+        p {
+            border: 1px solid black;
+        }
+
+        .color {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            color: white;
+            display: inline-block; 
+            font-weight: bold;
+            margin: 3px;
+        }
+
+        .color1 { background-color: #FF5733; }
+        .color2 { background-color: #33FF57; }
+        .color3 { background-color: #3357FF; }
+        .color4 { background-color: #F1C40F; }
+        .color5 { background-color: #8E44AD; }
+
+        .custom-color {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-left: 41%; 
+        }
+
+        a {
+            display: inline-block; 
+            height: 70px;
+            width: 90px;
+            background-color: #007bff; 
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px; 
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <div class="chat-box">
-        <div class="chat-header">
-            ChatGPT AI
+    <div class="container">
+        <h1>Color Palette Converter</h1>
+        <p>Enter Hex</p>
+        <div class="palette">
+            <div class="color color1">#FF5733</div>
+            <div class="color color2">#33FF57</div>
+            <div class="color color3">#3357FF</div>
+            <div class="color color4">#F1C40F</div>
+            <div class="color color5">#8E44AD</div>
         </div>
-        <div class="chat-messages">
-            <div class="message user-message">Hello! How can I assist you today?</div>
-            <div class="message bot-message">I'm here to help! What would you like to know?</div>
-            <div class="message user-message">Can you explain how to convert decimal to binary?</div>
-            <div class="message bot-message">Sure! You divide the number by 2 and keep track of the remainders.</div>
-        </div>
-        <div class="chat-input">
-            <input type="text" placeholder="Type your message here..." />
-            <button>Send</button>
-        </div>
-        <a href="Features.html"><h2>BACK</h2></a>
+        <!-- Custom color box -->
+        <div class="custom-color"><a href="Features.html"><h1>Back</h1></a></div>
+        
+     
     </div>
 </body>
 </html>
