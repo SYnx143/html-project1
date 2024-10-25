@@ -1,14 +1,91 @@
-a {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            height: 100%;
+            margin-top: 10%;
+            margin-left: 40%;
+        }
+        .scanner-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .video-box {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fafafa;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+ 
+        }
+        .video-box:hover {
+            background-color: #e0e0e0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+        a {
     display: inline-block; 
-    height: 65px;
-    width: 100px;
+    height: 70px;
+    width: 90px;
     background-color: #007bff; 
     color: white;
-    text-decoration: none;
+ text-align: center;
     border-radius: 5px;
     margin-top: 15px; 
 }
 
 a:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
 }
+    </style>
+</head>
+<body>
+
+<div class="scanner-container">
+    <h2>QR Code Scanner</h2>
+    <div class="video-box" id="videoBox">
+        <p>Insert Image Here.</p>
+    </div>
+    <button>Start Scanning</button>
+    <div class="result">Scanned QR code result will appear here...</div>
+    <a href="Features.html"><h2>BACK</h2></a>
+    
+</div>
+
+
+
+</body>
+</html>
