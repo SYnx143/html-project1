@@ -1,113 +1,106 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette from Image</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Color Pallete</title>
+    <link rel="icon" type="images/png" href="Untitled_design_1.webp">
+
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
             display: flex;
-            height: 100%;
-            margin-top: 10%;
-            margin-left: 40%;
+            height: 100%; 
         }
-    
-        .palette-container {
+        .chat-box {
+            width: 400px;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             background: white;
-            border-radius: 10px;
-            padding: 20px;
-            width: 300px;
+            display: block; 
+            margin-left: 40%; 
+            margin-top: 10%;
+        }
+        .chat-header {
+            background: #4a90e2;
+            color: white;
+            padding: 10px;
             text-align: center;
         }
-        .image-container {
-            width: 100%;
-            height: 200px;
-            background-color: #e0e0e0;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            display: flex;
-    
+        .chat-messages {
+            padding: 10px;
+            height: 300px;
+            border-bottom: 1px solid #ccc; 
         }
-        .image-container img {
-           width: 100%;
-           height: 100%;
-
+        .message {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 3px;
+            max-width: 75%;
         }
-
-        button{
-            padding: 10px 15px;
-            background-color: #007bff;
+        .user-message {
+            background: #4a90e2;
+            color: white;
+        }
+        .bot-message {
+            background: #eaeaea;
+            color: #333;
+        }
+        .chat-input {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .chat-input input {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        .chat-input button {
+            padding: 10px;
+            background: #4a90e2;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 3px;      
+            width: 70px;
         }
-        .color-swatch {
-            width: 100%;
-            height: 50px;
-            margin: 10px 0;
-            border-radius: 5px;
-            color: white;
-          
-        }
-        h3{
-            margin-left: 25%;
-            margin-top: 25%;
-        }
-        .color1 {
-             background-color: #007bff;
-            }
-        .color2 {
-             background-color: #28a745; 
-            }
-        .color3 {
-             background-color: #dc3545; 
-            }
-        .color4 {
-            background-color: #ffc107; 
-            } 
-        .color5 {
-            background-color: #17a2b8; 
-        }
-
-  a {
+        a {
     display: inline-block; 
     height: 65px;
     width: 100px;
     background-color: #007bff; 
     color: white;
-    text-decoration: none;
+    text-align: center;
     border-radius: 5px;
     margin-top: 15px; 
+    margin-left: 35%;
 }
 
 a:hover {
     background-color: #0056b3;
 }
-
     </style>
 </head>
 <body>
-
-<div class="palette-container">
-    <h2>Color Palette from Image</h2>
-    <div class="image-container">
-        <h3>Insert Image Here.</h3>
+    <div class="chat-box">
+        <div class="chat-header">
+            ChatGPT AI
+        </div>
+        <div class="chat-messages">
+            <div class="message user-message">Hello! How can I assist you today?</div>
+            <div class="message bot-message">I'm here to help! What would you like to know?</div>
+            <div class="message user-message">Can you explain how to convert decimal to binary?</div>
+            <div class="message bot-message">Sure! You divide the number by 2 and keep track of the remainders.</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message here..." />
+            <button>Send</button>
+        </div>
+        <a href="Features.html"><h2>BACK</h2></a>
     </div>
-    <button>Convert</button>
-    <div class="color-swatch color1">#007bff</div>
-    <div class="color-swatch color2">#28a745</div>
-    <div class="color-swatch color3">#dc3545</div>
-    <div class="color-swatch color4">#ffc107</div>
-    <div class="color-swatch color5">#17a2b8</div>
-
-    <a href="Features.html"><h2>BACK</h2></a>
-</div>
-
 </body>
 </html>
